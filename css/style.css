@@ -1,10 +1,15 @@
 body {
   font-size: 14px;
+  color: black;
 }
 
 /*start general css*/
 .font-white {
   color:white;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 /*end general css*/
 
@@ -23,7 +28,6 @@ header {
   margin-left: 2rem;
   margin-top: 3rem;
   font-size: 3.5rem;
-  font-weight: bold;
 }
 
 .logo img {
@@ -43,7 +47,7 @@ nav li {
 }
 
 nav li:hover{
-  border-bottom: 1.5px solid #fef200;
+  border-bottom: 1.5px solid #fabb14;
 }
 
 nav li a {
@@ -116,4 +120,12 @@ nav li a:hover{
     background-image: url("../images/pasta5.jpg");
   }
   /*end swiper*/
-  /*Main*/
+  /*Satart Info*/
+.info h2 {
+  font-size: 5rem;
+  padding-bottom: 1.5rem;
+}
+.border {
+  border-bottom: 4px solid #fabb14;
+}
+  /*End Info*/
