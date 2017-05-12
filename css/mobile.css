@@ -8,6 +8,9 @@ nav li {
 }
 
 .info h2 {
+  font-size: 5rem;
+}
+.info h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
