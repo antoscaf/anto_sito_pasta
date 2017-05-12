@@ -81,7 +81,7 @@ nav li a:hover{
   z-index: 3;
 }
 
-.swiper-slide{
+.swipe-carousel{
   position: relative;
   background: #000;
   overflow: hidden;
@@ -89,7 +89,7 @@ nav li a:hover{
   display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;
   }
 
-.swiper-slide::after {
+.swipe-carousel::after {
   content: ' ';
   display: block;
   position: absolute;
@@ -127,6 +127,7 @@ nav li a:hover{
   /*Satart Info*/
 .info {
   background-color: #f8fafc;
+  padding-bottom: 5rem;
 }
 .info h2 {
   font-size: 7rem;
@@ -161,4 +162,43 @@ nav li a:hover{
   color: #fabb14;
   border-color: #fabb14;
 }
+
   /*End Info*/
+
+  .swiper-slide--img-pasta6::after {
+    background-image: url("../images/pasta6.jpg");
+  }
+
+  .swiper-slide--img-pasta7::after {
+    background-image: url("../images/pasta7.jpg");
+  }
+
+  .swiper-slide--img-pasta8::after {
+    background-image: url("../images/pasta8.jpg");
+  }
+
+  /*Start Main Box*/
+.main--box {
+  padding-top: 3rem;
+}
+
+.main--box--text h2 {
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+
+.main--box--text p {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+  /*End Main Box*/
+
+/*Footer*/
+footer {
+  background: #fae484;
+}
+
+.footer--logo img {
+  width: 7rem;
+  padding-top: 4rem;
+}
