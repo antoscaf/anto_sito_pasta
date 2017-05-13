@@ -4,35 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Pasta Studios</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-  </head>
-  <body>
 
-    <header class="container-fluid">
-      <div class="container">
-        <div class="col-xs-12">
-          <div class="col-xs-12 col-sm-5 logo">
-              <img src="images/logo_pasta.png" alt="logo_pasta">
-              <h1 class="font-bold">Pasta Studios</h1>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <nav>
-               <ul class="unstyled">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Chi siamo</a></li>
-                 <li><a href="#">Prodotti</a></li>
-                 <li><a href="#">Ricette</a></li>
-                 <li><a href="#">Contatti</a></li>
-               </ul>
-           </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <?php
+      include("include/meta.php");
+    ?>
+
+  </head>
+  <body class="page-home">
+
+    <?php
+      include("include/header.php");
+    ?>
     <main>
       <!-- Inizio I Carosello -->
       <div class="container-fluid carousel">
@@ -51,49 +33,27 @@
       <!-- Info Box -->
       <div class="container-fluid info">
         <div class="container">
+          <?php
+            $titolo = "Chi siamo";
+            include("include/titolo.php");
+          ?>
           <div class="row">
-            <div class="col-xs-12">
-              <h2 class="font-bold text-uppercase">Chi siamo</h2>
-            </div>
-            <div class="col-xs-12 col-sm-1 border"></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
-              <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                  <img clas="img-responsive" src="images/logo_pasta.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-9">
-                  <h3>L'azienda</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min</p>
-                  <button type="button" class="btn btn-primary btn-lg text-uppercase">Scopri</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                  <img clas="img-responsive" src="images/logo_prodotti.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-9">
-                  <h3>I prodotti</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min</p>
-                  <button type="button" class="btn btn-primary btn-lg text-uppercase">Scopri</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                  <img clas="img-responsive" src="images/logo_ricette.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-9">
-                  <h3>Le ricette</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min</p>
-                  <button type="button" class="btn btn-primary btn-lg text-uppercase">Scopri</button>
-                </div>
-              </div>
-            </div>
+
+            <?php
+              $titolo = "L'Azienda";
+              $icona = "images/logo_pasta.png";
+              include('include/box-richiamo.php');
+
+              $titolo = "I Prodotti";
+              $icona = "images/logo_prodotti.png";
+              include('include/box-richiamo.php');
+
+              $titolo = "Le ricette";
+              $icona = "images/logo_ricette.png";
+              include('include/box-richiamo.php');
+            ?>
+
+
           </div>
         </div>
       </div>
@@ -135,6 +95,10 @@
     <footer>
       <div class="container">
         <div class="row">
+          <?
+            $logoModificatore = "footer";
+            include("include/logo.php");
+          ?>
           <div class="col-xs-11 col-md-offset-1 footer--logo">
             <img src="images/logo_pasta.png" alt="logo_pasta">
           </div>

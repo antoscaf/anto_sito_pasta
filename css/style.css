@@ -54,6 +54,13 @@ nav li {
   padding-bottom: 2rem;
 }
 
+.page-home .link-home,
+.page-chisiamo .link-chisiamo,
+.page-prodotti .link-prodotti,
+.page-contatti .link-contatti{
+  border-bottom: 1.5px solid #fabb14;
+}
+
 nav li:hover{
   border-bottom: 1.5px solid #fabb14;
 }
